@@ -18,3 +18,14 @@ MongoClient.connect(url, { useNewUrlParser: true })
   .catch((err) => {
     console.log(err)
   })
+
+// Watches the whole cluster, permission issue
+
+// MongoClient.connect(url, { useNewUrlParser: true })
+//   .then((client) => {
+//     client.watch()
+//     console.log('Connected successfully to server')
+//   })
+//   .catch((err) => {
+//     console.log(err)
+//   })
